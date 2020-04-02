@@ -11,3 +11,8 @@ sheet.unmerge_cells('A1:D3') # Split these cells up.
 sheet.unmerge_cells('C5:D5')
 wb.save('merged.xlsx')
 
+
+sheet = wb.active
+sheet.freeze_panes = 'A2' # Freeze the rows above A2.
+wb.save('freezeExample.xlsx')
+
